@@ -1,11 +1,15 @@
 language: generic
 sudo: required
 
+env:
+  - ARCH=i486
+  - RELEASE=3.0.2.8
+
 services:
-    - docker
+  - docker
 
 before_install:
-- docker build -t baseimage-build .
+  - docker build -t baseimage-build .
 
 script:
-- echo "Done!"
+  - echo "Done!"
