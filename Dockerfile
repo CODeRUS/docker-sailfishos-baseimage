@@ -1,6 +1,9 @@
 FROM coderus/sailfishos-baseimage
 MAINTAINER Andrey Kozhevnikov <coderusinbox@gmail.com>
 
+ARG ARCH
+ARG RELEASE
+
 RUN mic \
 	create fs \
 	-v \
