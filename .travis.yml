@@ -21,4 +21,11 @@ before_install:
     baseimage.ks
 
 script:
-  - echo "Done!"
+  - docker import baseimage.tar.bz2 coderus/sailfishos-baseimage:latest
+  - docker tag coderus/sailfishos-baseimage:latest coderus/sailfishos-baseimage:$RELEASE
+
+deploy:
+  provider: script
+  script: bash docker_push
+  on:
+    branch: master
