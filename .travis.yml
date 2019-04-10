@@ -9,7 +9,7 @@ services:
 
 before_install:
   - docker pull coderus/sailfishos-baseimage
-  - docker run --rm --privileged --network=host -v $(pwd):/share -w /share
+  - docker run --rm --privileged --network=host -v $(pwd):/share -w /share coderus/sailfishos-baseimage
     mic create fs
     -v
     -d
