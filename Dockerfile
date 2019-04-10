@@ -4,6 +4,8 @@ MAINTAINER Andrey Kozhevnikov <coderusinbox@gmail.com>
 ARG ARCH
 ARG RELEASE
 
+COPY baseimage.ks /baseimage.ks
+
 RUN mic \
 	create fs \
 	-v \
