@@ -11,7 +11,28 @@ repo --name=sdk-@RELEASE@-@ARCH@ --baseurl=https://releases.jolla.com/releases/@
 repo --name=coderus-baseimage-@ARCH@ --baseurl=http://repo.merproject.org/obs/home:/coderus:/baseimage/@ARCH@/
 
 %packages
-baseimage
+android-tools
+atruncate
+attr
+basesystem
+deltarpm
+file
+kbd
+kernel-adaptation-pc
+mic
+net-tools
+passwd
+pigz
+pygpgme
+python-iniparse
+qemu-usermode-common
+qemu-usermode-static
+rootfiles
+syslinux-extlinux
+systemd-config-mer
+usbutils
+xdg-user-dirs
+zypper
 %end
 
 %pre
