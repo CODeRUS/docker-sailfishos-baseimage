@@ -2,7 +2,7 @@ language: generic
 sudo: required
 
 env:
-  - ARCH=i486 RELEASE=3.0.2.8
+  - ARCH=i486 RELEASE=4.5.0.16
 
 services:
   - docker
