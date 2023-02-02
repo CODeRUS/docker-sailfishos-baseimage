@@ -23,7 +23,6 @@ mic
 net-tools
 passwd
 pigz
-python-iniparse
 qemu-usermode-common
 qemu-usermode-static
 rootfiles
